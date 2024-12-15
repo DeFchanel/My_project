@@ -53,7 +53,7 @@ def listen():
             r.adjust_for_ambient_noise(audio)
         return r.recognize_google(content, language="ru-RU").lower()
     except speech_recognition.UnknownValueError: 
-            return ''
+        return ''
 
 
 def say(text_to_speech):
